@@ -1,5 +1,7 @@
 # Brasileirão Scraper App 🏆
 
+### ⚠️ Atenção! _Este projeto é apenas pra finalidade de estudos sobre scraping de dados e não deve ser utilizado pra fins comerciais ou replicação de conteúdo sem a prévia autorização dos portais produtores dos conteúdos_
+
 Aplicação backend construída com [Bun](https://bun.sh/) e [Elysia](https://elysiajs.com/), utilizando arquitetura hexagonal, Clean Code, Domain-Driven Design (DDD) e CQRS para expor dados da tabela do Campeonato Brasileiro Série A.
 
 ## 📌 O que esse projeto faz
