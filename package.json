@@ -2,11 +2,17 @@
   "name": "scraper",
   "module": "main/main.ts",
   "type": "module",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "author": "Almir Toledo <deensstudios@gmail.com>",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "elysia": "^1.2.25"
   }
 }
