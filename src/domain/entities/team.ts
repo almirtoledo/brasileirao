@@ -2,7 +2,6 @@ export class Team {
   constructor(
     readonly position: number,
     readonly teamName: string,
-    readonly teamLogo: string,
     readonly points: number,
     readonly wins: number,
     readonly draws: number,
@@ -10,13 +9,13 @@ export class Team {
     readonly goalsFor: number,
     readonly goalsAgainst: number,
     readonly goalDifference: number,
-    readonly efficiency: number
+    readonly efficiency: number,
+    readonly teamLogo?: string,
   ) { }
 
   static create(props: {
     position: number;
     teamName: string;
-    teamLogo: string;
     points: number;
     wins: number;
     draws: number;
@@ -25,11 +24,11 @@ export class Team {
     goalsAgainst: number;
     goalDifference: number;
     efficiency: number;
+    teamLogo?: string;
   }): Team {
     return new Team(
       props.position,
       props.teamName,
-      props.teamLogo,
       props.points,
       props.wins,
       props.draws,
@@ -37,7 +36,8 @@ export class Team {
       props.goalsFor,
       props.goalsAgainst,
       props.goalDifference,
-      props.efficiency
+      props.efficiency,
+      props.teamLogo,
     );
   }
 }

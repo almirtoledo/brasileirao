@@ -37,7 +37,6 @@ export class LanceTeamRepository implements TeamRepository {
           Team.create({
             position: posNumber,
             teamName,
-            teamLogo,
             points: gridCells[0]!,
             wins: gridCells[1]!,
             draws: gridCells[2]!,
@@ -45,7 +44,8 @@ export class LanceTeamRepository implements TeamRepository {
             goalsFor: gridCells[4]!,
             goalsAgainst: gridCells[5]!,
             goalDifference: gridCells[6]!,
-            efficiency: gridCells[8]!
+            efficiency: gridCells[8]!,
+            teamLogo,
           })
         );
       }

@@ -27,7 +27,6 @@ export class TerraTeamRepository implements TeamRepository {
         Team.create({
           position,
           teamName,
-          teamLogo,
           points,
           wins,
           draws,
@@ -35,7 +34,8 @@ export class TerraTeamRepository implements TeamRepository {
           goalsFor,
           goalsAgainst,
           goalDifference,
-          efficiency
+          efficiency,
+          teamLogo,
         })
       );
     });
